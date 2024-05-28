@@ -25,7 +25,7 @@ import org.LexGrid.lexevs.metabrowser.MetaBrowserService.Direction;
 import org.LexGrid.lexevs.metabrowser.model.RelationshipTabResults;
 import org.LexGrid.naming.SupportedHierarchy;
 
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 import gov.nih.nci.evs.browser.common.Constants;
 import java.util.Map.Entry;
 import java.util.*;

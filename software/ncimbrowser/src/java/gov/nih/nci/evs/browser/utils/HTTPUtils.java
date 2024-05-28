@@ -9,7 +9,7 @@ import java.io.*;
 import java.net.*;
 import java.util.regex.*;
 
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 
 import gov.nih.nci.evs.browser.common.*;
 import gov.nih.nci.evs.browser.properties.*;

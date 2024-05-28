@@ -16,7 +16,7 @@ import org.LexGrid.lexevs.metabrowser.model.*;
 import org.LexGrid.lexevs.metabrowser.model.MetaTreeNode.*;
 import org.LexGrid.lexevs.metabrowser.impl.*;
 
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 import org.LexGrid.lexevs.metabrowser.helper.*;
 
 /**

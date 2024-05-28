@@ -1,7 +1,6 @@
 package gov.nih.nci.evs.browser.utils;
 
 import java.util.*;
-//import net.sf.ehcache.*;
 import gov.nih.nci.evs.browser.properties.*;
 import org.json.*;
 
@@ -12,14 +11,15 @@ import org.LexGrid.concepts.*;
 import org.LexGrid.lexevs.metabrowser.*;
 import org.LexGrid.lexevs.metabrowser.model.*;
 import org.LexGrid.lexevs.metabrowser.model.MetaTreeNode.*;
-
-import org.apache.logging.log4j.*;
-
-import org.ehcache.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.ehcache.Cache;
+import org.ehcache.CacheManager;
 import org.ehcache.config.builders.CacheConfigurationBuilder;
 import org.ehcache.config.builders.CacheManagerBuilder;
 import org.ehcache.config.builders.ExpiryPolicyBuilder;
 import org.ehcache.config.builders.ResourcePoolsBuilder;
+
 import java.util.stream.Collectors;
 import java.time.Duration;
 

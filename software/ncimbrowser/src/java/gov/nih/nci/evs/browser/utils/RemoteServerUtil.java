@@ -10,7 +10,7 @@ import gov.nih.nci.evs.browser.properties.*;
 //import gov.nih.nci.system.client.*;
 //import gov.nih.nci.evs.security.*;
 import gov.nih.nci.evs.browser.bean.*;
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 
 //import org.LexGrid.LexBIG.caCore.interfaces.LexEVSDistributed;
 import org.lexgrid.valuesets.LexEVSValueSetDefinitionServices;

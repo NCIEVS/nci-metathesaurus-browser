@@ -7,7 +7,9 @@ import javax.faces.event.*;
 import javax.faces.model.*;
 import javax.servlet.http.*;
 
-import org.apache.logging.log4j.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import gov.nih.nci.evs.browser.utils.*;
 
 /**

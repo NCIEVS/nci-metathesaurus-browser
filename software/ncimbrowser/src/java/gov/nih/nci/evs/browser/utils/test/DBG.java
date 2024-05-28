@@ -2,7 +2,7 @@ package gov.nih.nci.evs.browser.utils.test;
 
 import java.util.*;
 import gov.nih.nci.evs.browser.utils.*;
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 
 /**
  * <!-- LICENSE_TEXT_START -->

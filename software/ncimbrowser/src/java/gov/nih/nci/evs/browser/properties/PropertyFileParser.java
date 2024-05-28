@@ -5,6 +5,8 @@ import java.util.*;
 
 import javax.xml.parsers.*;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.apache.logging.log4j.*;
 import org.w3c.dom.*;
 import org.xml.sax.*;

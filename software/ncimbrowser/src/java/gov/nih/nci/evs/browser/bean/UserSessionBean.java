@@ -7,16 +7,18 @@ import javax.faces.context.*;
 import javax.faces.event.*;
 import javax.faces.model.*;
 import javax.servlet.http.*;
+import jakarta.mail.MessagingException;
 
 import org.LexGrid.LexBIG.DataModel.Core.*;
 import org.LexGrid.LexBIG.Utility.Iterators.*;
 import org.LexGrid.concepts.Entity;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import gov.nih.nci.evs.browser.utils.*;
-import gov.nih.nci.evs.browser.properties.*;
+import gov.nih.nci.evs.browser.utils.MailUtils;
 import gov.nih.nci.evs.browser.common.*;
-import org.apache.logging.log4j.*;
-
+import gov.nih.nci.evs.browser.properties.NCImBrowserProperties;
 import nl.captcha.Captcha;
 import nl.captcha.audio.AudioCaptcha;
 
@@ -1291,7 +1293,7 @@ response.setContentType("text/html;charset=utf-8");
          try {
             String recipientStr = NCImBrowserProperties.getNCICB_CONTACT_URL();
             String mail_smtp_server = NCImBrowserProperties.getMAIL_SMTP_SERVER();
-            MailUtils.postMail(from, recipientStr, subject, message, mail_smtp_server);
+           // MailUtils.postMail(from, recipientStr, subject, message, mail_smtp_server);
 			request.getSession().setAttribute("message", msg);
         } catch (Exception e) {
             msg = "Your message was not sent.\n";

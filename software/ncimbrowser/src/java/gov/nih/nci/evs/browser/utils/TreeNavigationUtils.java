@@ -1,40 +1,29 @@
 package gov.nih.nci.evs.browser.utils;
-import gov.nih.nci.evs.browser.bean.*;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+import java.util.Vector;
 
-import java.io.*;
-import java.util.*;
-import org.LexGrid.LexBIG.DataModel.Collections.*;
-import org.LexGrid.LexBIG.DataModel.Collections.ConceptReferenceList;
 import org.LexGrid.LexBIG.DataModel.Collections.ResolvedConceptReferenceList;
-import org.LexGrid.LexBIG.DataModel.Core.*;
 import org.LexGrid.LexBIG.DataModel.Core.CodingSchemeVersionOrTag;
-import org.LexGrid.LexBIG.DataModel.Core.ConceptReference;
 import org.LexGrid.LexBIG.DataModel.Core.ResolvedConceptReference;
-import org.LexGrid.LexBIG.Exceptions.*;
-import org.LexGrid.LexBIG.Extensions.Generic.*;
-import org.LexGrid.LexBIG.Extensions.Generic.LexBIGServiceConvenienceMethods.*;
+import org.LexGrid.LexBIG.Extensions.Generic.LexBIGServiceConvenienceMethods;
 import org.LexGrid.LexBIG.Impl.Extensions.tree.dao.iterator.ChildTreeNodeIterator;
-import org.LexGrid.LexBIG.Impl.Extensions.tree.json.JsonConverter;
-import org.LexGrid.LexBIG.Impl.Extensions.tree.json.JsonConverterFactory;
 import org.LexGrid.LexBIG.Impl.Extensions.tree.model.LexEvsTree;
 import org.LexGrid.LexBIG.Impl.Extensions.tree.model.LexEvsTreeNode;
 import org.LexGrid.LexBIG.Impl.Extensions.tree.service.TreeService;
 import org.LexGrid.LexBIG.Impl.Extensions.tree.service.TreeServiceFactory;
-import org.LexGrid.LexBIG.Impl.LexBIGServiceImpl;
-import org.LexGrid.LexBIG.LexBIGService.*;
-import org.LexGrid.LexBIG.LexBIGService.CodedNodeSet;
 import org.LexGrid.LexBIG.LexBIGService.LexBIGService;
-import org.LexGrid.LexBIG.Utility.*;
-import org.LexGrid.LexBIG.Utility.Constructors;
-//import org.LexGrid.LexBIG.caCore.interfaces.LexEVSApplicationService;
-import org.LexGrid.codingSchemes.*;
-import org.LexGrid.commonTypes.*;
-import org.LexGrid.concepts.*;
-import org.LexGrid.naming.*;
-import org.apache.logging.log4j.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import org.json.JSONObject;
 import org.json.JSONException;
+import org.json.JSONObject;
+
+import gov.nih.nci.evs.browser.bean.TreeNode;
 
 /**
  * <!-- LICENSE_TEXT_START -->

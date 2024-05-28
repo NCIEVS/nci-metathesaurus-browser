@@ -5,6 +5,8 @@ import java.util.*;
 
 import org.LexGrid.LexBIG.Utility.Iterators.*;
 import org.LexGrid.LexBIG.DataModel.Core.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.apache.logging.log4j.*;
 
 import gov.nih.nci.evs.browser.common.*;

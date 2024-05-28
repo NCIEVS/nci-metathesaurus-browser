@@ -13,7 +13,7 @@ import org.LexGrid.LexBIG.Exceptions.*;
 import org.LexGrid.LexBIG.DataModel.Core.types.*;
 
 import gov.nih.nci.evs.browser.common.*;
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 
 import java.util.Map;
 import java.util.Map.Entry;

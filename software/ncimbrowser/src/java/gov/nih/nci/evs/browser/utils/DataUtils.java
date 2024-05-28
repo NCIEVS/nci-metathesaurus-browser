@@ -7,8 +7,10 @@ import java.util.*;
 import java.text.*;
 import java.sql.*;
 
-import org.apache.commons.lang.*;
-import org.apache.logging.log4j.*;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 
 import org.LexGrid.LexBIG.DataModel.Collections.*;
 import org.LexGrid.LexBIG.DataModel.Core.*;

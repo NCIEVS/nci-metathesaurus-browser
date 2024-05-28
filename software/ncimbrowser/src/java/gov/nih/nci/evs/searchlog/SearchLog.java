@@ -1,8 +1,6 @@
 package gov.nih.nci.evs.searchlog;
 
-import gov.nih.nci.evs.browser.utils.*;
-
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 
 /**
  * <!-- LICENSE_TEXT_START -->

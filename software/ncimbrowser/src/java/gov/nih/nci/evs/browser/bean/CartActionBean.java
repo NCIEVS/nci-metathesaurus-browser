@@ -38,6 +38,8 @@ import org.LexGrid.valueSets.types.DefinitionOperator;
 
 import javax.faces.context.*;
 import org.apache.commons.io.IOUtils;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 /**
  * <!-- LICENSE_TEXT_START -->

@@ -9,8 +9,8 @@ import org.LexGrid.LexBIG.Extensions.Generic.*;
 import org.LexGrid.LexBIG.Utility.*;
 import org.LexGrid.commonTypes.*;
 import org.LexGrid.concepts.*;
-import org.apache.commons.lang.*;
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
+import org.apache.commons.lang3.*;
 
 import org.LexGrid.LexBIG.Exceptions.*;
 import org.LexGrid.LexBIG.LexBIGService.*;
@@ -595,7 +595,7 @@ public class MetaTreeUtils {
 
         Util_displayMessage("CUI ....... : " + rcr.getConceptCode());
         Util_displayMessage("Description : "
-            + org.apache.commons.lang.StringUtils.abbreviate(rcr.getEntityDescription().getContent(),
+            + org.apache.commons.lang3.StringUtils.abbreviate(rcr.getEntityDescription().getContent(),
                 60));
         Util_displayMessage("SAB ....... : " + sab);
         Util_displayMessage("");
@@ -617,12 +617,12 @@ public class MetaTreeUtils {
         StringBuffer codeAndText =
             new StringBuffer(indent).append(
                 focusCode.equals(ti._code) ? ">" : " ").append(ti._code).append(
-                ':').append(org.apache.commons.lang.StringUtils.abbreviate(ti._text, 60)).append(
+                ':').append(org.apache.commons.lang3.StringUtils.abbreviate(ti._text, 60)).append(
                 ti._expandable ? " [+]" : "");
         if (ti._auis != null)
             for (String line : ti._auis.split("\\|"))
                 codeAndText.append('\n').append(indent).append("    {").append(
-                    org.apache.commons.lang.StringUtils.abbreviate(line, 60)).append('}');
+                    org.apache.commons.lang3.StringUtils.abbreviate(line, 60)).append('}');
         Util_displayMessage(codeAndText.toString());
 
         indent.append("| ");
@@ -680,11 +680,11 @@ public class MetaTreeUtils {
             for (ResolvedConceptReference neighbor : neighbors) {
                 Util_displayMessage(neighbor.getCode()
                     + ':'
-                    + org.apache.commons.lang.StringUtils.abbreviate(neighbor.getEntityDescription()
+                    + org.apache.commons.lang3.StringUtils.abbreviate(neighbor.getEntityDescription()
                         .getContent(), 60));
                 for (String line : getAtomText(neighbor, sab).split("\\|"))
                     Util_displayMessage("    {"
-                        + org.apache.commons.lang.StringUtils.abbreviate(line, 60) + '}');
+                        + org.apache.commons.lang3.StringUtils.abbreviate(line, 60) + '}');
             }
         }
     }
@@ -886,7 +886,7 @@ public class MetaTreeUtils {
                 .getAssociationName(), scheme, csvt) : lbscm
                 .getAssociationReverseName(assoc.getAssociationName(), scheme,
                     csvt);
-        if (org.apache.commons.lang.StringUtils.isBlank(assocLabel))
+        if (org.apache.commons.lang3.StringUtils.isBlank(assocLabel))
             assocLabel =
                 (navigatedFwd ? "" : "[Inverse]") + assoc.getAssociationName();
         return assocLabel;

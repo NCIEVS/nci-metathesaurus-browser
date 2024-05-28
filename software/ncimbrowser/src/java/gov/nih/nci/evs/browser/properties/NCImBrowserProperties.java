@@ -4,6 +4,9 @@ import java.util.*;
 
 import gov.nih.nci.evs.browser.utils.*;
 import gov.nih.nci.evs.browser.bean.*;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.apache.logging.log4j.*;
 
 /**

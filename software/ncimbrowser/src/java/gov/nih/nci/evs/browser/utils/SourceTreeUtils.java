@@ -20,8 +20,7 @@ import org.LexGrid.lexevs.metabrowser.*;
 import org.LexGrid.lexevs.metabrowser.model.*;
 import org.LexGrid.lexevs.metabrowser.model.MetaTreeNode.*;
 
-import org.apache.commons.lang.*;
-import org.apache.logging.log4j.*;
+import org.apache.log4j.*;
 import org.json.*;
 
 /**
@@ -870,7 +869,7 @@ public class SourceTreeUtils {
                 scheme, csvt) : lbscm.getAssociationReverseName(
                 associationName, scheme, csvt);
 
-        if (org.apache.commons.lang.StringUtils.isBlank(assocLabel))
+        if (org.apache.commons.lang3.StringUtils.isBlank(assocLabel))
             assocLabel =
                 (navigatedFwd ? "" : "[Inverse]") + assoc.getAssociationName();
         return assocLabel;
@@ -1220,12 +1219,12 @@ public class SourceTreeUtils {
         StringBuffer codeAndText =
             new StringBuffer(indent).append(
                 focusCode.equals(ti._code) ? ">" : " ").append(ti._code).append(
-                ':').append(org.apache.commons.lang.StringUtils.abbreviate(ti._text, 120)).append(
+                ':').append(org.apache.commons.lang3.StringUtils.abbreviate(ti._text, 120)).append(
                 ti._expandable ? " [+]" : "");
         if (ti._auis != null)
             for (String line : ti._auis.split("\\|"))
                 codeAndText.append('\n').append(indent).append("    {").append(
-                    org.apache.commons.lang.StringUtils.abbreviate(line, 120)).append('}');
+                    org.apache.commons.lang3.StringUtils.abbreviate(line, 120)).append('}');
         Util_displayMessage(codeAndText.toString());
 
         indent.append("| ");
