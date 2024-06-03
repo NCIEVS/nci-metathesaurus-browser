@@ -6,7 +6,7 @@
 <%@ page import="org.LexGrid.concepts.Entity" %>
 <%@ page import="gov.nih.nci.evs.browser.common.Constants" %>
 <%@ page import="gov.nih.nci.evs.browser.utils.*" %>
-<%@ page import="org.apache.logging.log4j.*" %>
+<%@ page import="org.apache.log4j.*" %>
 
 <% String basePath = request.getContextPath(); %>
 

@@ -97,9 +97,9 @@ public class RemoteServerUtil {
     }
 
     public static LexBIGService createLexBIGService(String serviceUrl) {
-        try {
+//        try {
             NCImBrowserProperties properties = null;
-            if (serviceUrl == null || serviceUrl.compareTo("") == 0 || serviceUrl.compareToIgnoreCase("null") == 0) {
+           // if (serviceUrl == null || serviceUrl.compareTo("") == 0 || serviceUrl.compareToIgnoreCase("null") == 0) {
 				try {
 					properties = NCImBrowserProperties.getInstance();
 					String lg_config_file =
@@ -115,7 +115,7 @@ public class RemoteServerUtil {
 					ex.printStackTrace();
 				}
 				return null;
-			}
+			//}
 
             /*
             if (_debug) {
@@ -128,12 +128,12 @@ public class RemoteServerUtil {
             lexevsService = registerAllSecurityTokens(lexevsService);
             if (activate_server_monitor_thread) ServerMonitorThread.getInstance().monitor(lexevsService, "createLexBIGService:2");
             return (LexBIGService) lexevsService;
-            */
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//            */
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         //if (activate_server_monitor_thread) ServerMonitorThread.getInstance().monitor(null, "createLexBIGService:2");
-        return null;
+//        return null;
     }
 
 /*

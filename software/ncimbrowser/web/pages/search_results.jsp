@@ -16,7 +16,7 @@
 <%@ page import="org.LexGrid.LexBIG.DataModel.Core.*" %>
 
 <%@ page import="java.io.*" %>
-<%@ page import="org.apache.logging.log4j.*" %>
+<%@ page import="org.apache.log4j.*" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html lang="en" xmlns:c="http://java.sun.com/jsp/jstl/core">

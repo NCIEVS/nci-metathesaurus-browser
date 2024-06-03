@@ -3,7 +3,7 @@
 <%@ page import="java.util.*" %>
 <%@ page import="gov.nih.nci.evs.browser.utils.*" %>
 <%@ page import="org.LexGrid.concepts.*" %>
-<%@ page import="org.apache.logging.log4j.*" %>
+<%@ page import="org.apache.log4j.*" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%
   String basePath = request.getContextPath();
