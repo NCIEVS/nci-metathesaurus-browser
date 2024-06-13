@@ -7,7 +7,6 @@ import javax.xml.parsers.*;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.apache.logging.log4j.*;
 import org.w3c.dom.*;
 import org.xml.sax.*;
 
@@ -98,7 +97,7 @@ public class PropertyFileParser {
     public void run() {
         parseXmlFile(_xmlfile);
         parseDocument();
-        // printData();
+        printData();
     }
 
     public List getDisplayItemList() {
@@ -210,14 +209,14 @@ public class PropertyFileParser {
             return true;
         return false;
     }
-/*
+
     private void printData() {
         Iterator it = _displayItemList.iterator();
         while (it.hasNext()) {
-            _logger.debug(it.next().toString());
+            System.out.println(it.next().toString());
         }
     }
-*/
+
 
     public List getTermGroupRankList() {
         return _termGroupRankList;
