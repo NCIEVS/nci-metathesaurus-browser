@@ -97,7 +97,7 @@ public class PropertyFileParser {
     public void run() {
         parseXmlFile(_xmlfile);
         parseDocument();
-        printData();
+//        printData();
     }
 
     public List getDisplayItemList() {
@@ -210,12 +210,12 @@ public class PropertyFileParser {
         return false;
     }
 
-    private void printData() {
-        Iterator it = _displayItemList.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next().toString());
-        }
-    }
+//    private void printData() {
+//        Iterator it = _displayItemList.iterator();
+//        while (it.hasNext()) {
+//            System.out.println(it.next().toString());
+//        }
+//    }
 
 
     public List getTermGroupRankList() {
