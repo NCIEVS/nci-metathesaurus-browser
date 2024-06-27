@@ -7,10 +7,11 @@
 <%@ page import="java.util.Vector"%>
 <%@ page import="org.LexGrid.concepts.Entity"%>
 <%
-  String ncim_build_info = new DataUtils().getNCIMBuildInfo();
-  String application_version = new DataUtils().getApplicationVersion();
-  String app_build_tag = new DataUtils().getNCITAppBuildTag();
-  String evs_service_url = new DataUtils().getEVSServiceURL();
+  DataUtils utils = new DataUtils();
+  String ncim_build_info = utils.getNCIMBuildInfo();
+  String application_version = utils.getApplicationVersion();
+  String app_build_tag = utils.getNCITAppBuildTag();
+  String evs_service_url = utils.getEVSServiceURL();
 %>
 <!--
    Build info: <%=ncim_build_info%>
