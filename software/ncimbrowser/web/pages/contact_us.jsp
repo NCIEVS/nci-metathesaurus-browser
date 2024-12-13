@@ -247,12 +247,12 @@ if (errorMsg != null && errorMsg.compareTo("") != 0) {
   </div>
 
 
-  <p><b>Online Form</b></p>
+<%--  <p><b>Online Form</b></p>
   <p class="textbody">
     To use this web form, please fill in every box below and then click on 'Submit'. 
   </p>
   
-  <h:form>
+   <h:form>
   
     <p>
       <i>Subject of your email:</i><i style="color:#FF0000;">*</i>
@@ -298,7 +298,7 @@ if (errorMsg != null && errorMsg.compareTo("") != 0) {
 <input type="hidden" name="alt_captcha_option" id="alt_captcha_option" value="<%=alt_captcha_option%>">
 <input type="hidden" name="captcha_option" id="captcha_option" value="<%=captcha_option%>">
 
-  </h:form>
+  </h:form> --%>
             <a href="https://www.cancer.gov/policies/privacy-security#NCIWeb" target="_blank" rel="noopener"  alt="Privacy Policy"><i>Privacy Policy on E-mail Messages Sent to the NCI Web Site</i></a>
             <%@ include file="/pages/include/nciFooter.jsp" %>
           </div>
